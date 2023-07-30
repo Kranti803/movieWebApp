@@ -6,18 +6,24 @@ import DetailSection from "./DetailSection";
 import Casts from "./Casts";
 import Similar from "./Similar";
 import Recommendations from "./Recommendations";
-
+import { useNavigate } from "react-router-dom";
 
 const Details = () => {
   const [details, setDetails] = useState([]);
   const [trailerKey, setTrailerKey] = useState([]);
   const { mediaType, id } = useParams();
   const [popUp, setPopUp] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     getDetailsResults(mediaType, id).then((data) => setDetails(data));
     getTrailer(mediaType, id).then((data) => setTrailerKey(data));
   }, [mediaType, id]);
+
+  ///redirecting to notFound page when id is not found..
+  if (!details) {
+    navigate("/*");
+  }
 
   return (
     <section className="details_page">
