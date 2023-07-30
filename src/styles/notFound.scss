@@ -1,0 +1,18 @@
+.pageNotFound {
+  height: 100vh;
+  padding-top: 200px;
+  background-color: rgba(0, 0, 0, 0.93);
+  > div {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    .bigText {
+      font-size: 150px;
+      font-weight: 700;
+    }
+    .smallText {
+      font-size: 44px;
+    }
+  }
+}

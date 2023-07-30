@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Homenaje&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Imprima&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Tektur&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+@import "./header";
+@import "./mediaqueries";
+@import "./home";
+@import "./hero";
+@import "./footer";
+@import "./movies&TV";
+@import "./search";
+@import "./details";
+@import "./similar";
+@import "./cards";
+@import "./casts";
+@import "./Modal";
+@import "./recommendations";
+@import "./spinner";
+@import "./notFound";
+
+
+body::-webkit-scrollbar{
+  display: none;
+}

@@ -1,0 +1,129 @@
+.details_page {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.93);
+  > .upper_details {
+    height: 75vh;
+    position: relative;
+
+    //styling for lazy-loading-image//
+    > span {
+      width: 100%;
+      height: 100%;
+      > img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    //styling for lazy-loading-image//
+    > .upper_details_overlay {
+      padding-top: 80px;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      );
+      > .overlay_details {
+        color: white;
+        padding: 0 2rem;
+        display: flex;
+        gap: 1rem;
+        height: 100%;
+        > .overlay_details_left {
+          //styling for lazy-load-image-component
+          > span {
+            width: 260px;
+            height: 360px;
+            display: block;
+            > img {
+              height: 100%;
+              width: 100%;
+              border-radius: 4px;
+            }
+          }
+          //styling for lazy-load-image-component
+        }
+        > .overlay_details_right {
+          padding-left: 1rem;
+          flex: 1;
+          > h2 {
+            font-size: 2rem;
+          }
+          > p {
+            color: rgb(205, 202, 202);
+          }
+          > .right_one {
+            display: flex;
+            padding-top: 10px;
+            gap: 10px;
+            > span {
+              background-color: darkmagenta;
+              border-radius: 4px;
+              font-size: 11px;
+              padding: 2px 3px;
+            }
+          }
+          > .right_two {
+            padding-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            > span {
+              font-weight: 500;
+            }
+            > button {
+              margin-left: 2rem;
+              font-weight: bold;
+              letter-spacing: 1px;
+              border: none;
+              border-radius: 4px;
+              color: white;
+              background: transparent;
+              display: flex;
+              align-items: center;
+              font-size: 1rem;
+              transition: all 0.4s ease-in-out;
+              &:hover {
+                color: #cf0;
+              }
+            }
+          }
+          > .right_three {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px 0;
+            > h2 {
+              font-size: 1.2rem;
+            }
+            > p {
+              font-size: 13px;
+            }
+          }
+          > .right_four {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            padding: 10px 0;
+            gap: 4rem;
+
+            > h3 {
+              font-size: 1rem;
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              > span:last-of-type {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

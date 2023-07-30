@@ -1,0 +1,141 @@
+.navbar {
+  color: white;
+  height: 80px;
+  background: black;
+  background: transparent;
+  position: absolute;
+  padding: 0 1.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+
+  .logo {
+    > h2 {
+      color: white;
+      font-family: "Tektur", cursive;
+      font-size: 2rem;
+    }
+    > button {
+      display: none;
+      border: none;
+      outline: none;
+      background-color: inherit;
+      color: white;
+      > svg {
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
+
+  > .menu_container > ul {
+    display: flex;
+    > li {
+      border-right: 2px solid white;
+      > a {
+        color: rgb(255, 255, 255);
+        padding: 0 2rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        &:hover {
+          color: #ccff00;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+      &:nth-child(3) {
+        border-right: 0px;
+      }
+    }
+  }
+  > .search_bar {
+    border-radius: 18px;
+    display: flex;
+    border: 2px solid white;
+    background-color: transparent;
+    > input {
+      outline: none;
+      border: none;
+      border-radius: 18px;
+      padding: 6px 8px;
+      width: 80%;
+      font-size: 14px;
+      background-color: transparent;
+      color: white;
+      &::placeholder {
+        font-size: 14px;
+        color: white;
+      }
+    }
+    > button {
+      border: none;
+      outline: none;
+      width: 20%;
+      border-radius: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      > a > svg {
+        color: white;
+        font-size: 25px;
+        display: grid;
+        place-items: center;
+      }
+    }
+  }
+
+  //styling for mobile navbar.......
+  .mobile_navbar {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-150%);
+    z-index: 999;
+
+    .hamburger_menu {
+      display: flex;
+      justify-content: space-between;
+      > h2 {
+        color: white;
+        font-family: "Tektur", cursive;
+        font-size: 2rem;
+      }
+      > button {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        > svg {
+          font-size: 2rem;
+          color: white;
+        }
+      }
+    }
+    .mobile_nav_menu {
+      padding-top: 2.5rem;
+      > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        > li > a {
+          color: white;
+          &:hover {
+            color: #ccff00;
+          }
+        }
+      }
+    }
+  }
+
+  //opening and closing of navbar.....
+  .mobile_nav_opens {
+    transform: translateX(0);
+  }
+}

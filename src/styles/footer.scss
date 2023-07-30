@@ -1,0 +1,13 @@
+.footer {
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.930);
+  border-top: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  > p {
+    color: white;
+    font-size: 15px;
+  }
+}

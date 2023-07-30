@@ -1,0 +1,38 @@
+.explore_movies,
+.explore_tvshows {
+  padding: 7rem 2rem 4rem 2rem;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.93);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  > .movies_upper_cotainer,
+  .tvshows_upper_container {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    > span {
+      border-bottom: 2px solid #cf0;
+      font-size: 18px;
+    }
+    > .sorting {
+      > select {
+        padding: 0.5rem;
+        outline: none;
+        border: none;
+        border-radius: 18px;
+      }
+    }
+  }
+  > .movies_lower_container,
+  .tvshows_lower_container {
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+    width: 85vw;
+    align-items: flex-start;
+    margin: auto;
+  }
+}

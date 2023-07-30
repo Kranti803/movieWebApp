@@ -1,0 +1,242 @@
+@media screen and (max-width: 914px) {
+  .navbar {
+    .menu_container > ul > li > a {
+      padding: 0 1rem;
+    }
+    .search_bar {
+      width: 30%;
+    }
+  }
+  body .details_page {
+    > .upper_details {
+      height: 65vmax;
+      > .upper_details_overlay {
+        .overlay_details {
+          align-items: center;
+        }
+      }
+    }
+  }
+  body .modal {
+    width: 80vw;
+    top: 20%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 838px) {
+  body .explore_movies > .movies_lower_container,
+  .explore_movies .tvshows_lower_container,
+  .explore_tvshows > .movies_lower_container,
+  .explore_tvshows .tvshows_lower_container {
+    width: 90vw;
+  }
+  .search > .search_container {
+    width: 90vw;
+  }
+  body .hero {
+    height: 50vh;
+    .hero_overlay {
+      padding-left: 1rem;
+      > h2 {
+        line-height: 3rem;
+        font-size: 2rem;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .navbar {
+    .logo {
+      > h2 {
+        display: none;
+      }
+      > button {
+        display: block;
+      }
+    }
+    .menu_container {
+      display: none;
+    }
+    .search_bar {
+      width: unset;
+    }
+  }
+
+  body .home {
+    padding: 0.5rem;
+    > .slider_section_container > .slider_buttons {
+      display: none;
+    }
+  }
+  body
+    .details_page
+    > .upper_details
+    > .upper_details_overlay
+    > .overlay_details
+    > .overlay_details_left
+    > span {
+    width: 260px;
+    height: 330px;
+  }
+  body
+    .details_page
+    > .upper_details
+    > .upper_details_overlay
+    > .overlay_details {
+    padding: 0 0.5rem;
+    > .overlay_details_right {
+      padding-left: 0.2rem;
+      > h2 {
+        font-size: 1.5rem;
+      }
+      > .right_one {
+        display: flex;
+        padding-top: 5px;
+        gap: 10px;
+      }
+      > .right_two {
+        padding-top: 0.5rem;
+      }
+    }
+  }
+  body .details_page {
+    > .upper_details {
+      height: 65vmax;
+    }
+  }
+  body .similar,
+  body .recommendations,
+  body .casts {
+    padding: 0 0.8rem;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  body .upper_details > .upper_details_overlay > .overlay_details {
+    > .overlay_details_left {
+      display: none;
+    }
+    > .overlay_details_right {
+      > h2 {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 581px) {
+  .navbar .mobile_navbar .hamburger_menu {
+    > h2 {
+      font-size: 1.5rem;
+    }
+    > button > svg {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 498px) {
+  body .cards {
+    width: 250px;
+    height: 350px;
+  }
+  body .explore_movies > .movies_lower_container,
+  body .explore_movies .tvshows_lower_container,
+  body .explore_tvshows > .movies_lower_container,
+  body .explore_tvshows .tvshows_lower_container {
+    width: 100%;
+    gap: 4.5rem;
+  }
+  body .explore_movies,
+  body .explore_tvshows {
+    padding: 7rem 0.5rem 6rem 0.5rem;
+  }
+
+  body .search > .search_container {
+    gap: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  body .cards {
+    width: 320px;
+    height: 420px;
+  }
+  body .similar > div,
+  body .recommendations > div {
+    > a {
+      height: unset;
+      width: 13.5rem;
+    }
+  }
+  @media screen and (max-width: 426px) {
+    .navbar .mobile_navbar {
+      width: 65%;
+      height: 100vh;
+    }
+  }
+  body .explore_movies > .movies_lower_container,
+  body .explore_movies .tvshows_lower_container,
+  body .explore_tvshows > .movies_lower_container,
+  body .explore_tvshows .tvshows_lower_container {
+    gap: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar {
+    .mobile_navbar {
+      width: 65%;
+      height: 100vh;
+      padding: 1rem 0.3rem 0 0.3rem;
+      .hamburger_menu {
+        > h2 {
+          font-size: 1.2rem;
+        }
+      }
+      .mobile_nav_menu {
+        padding-left: 1rem;
+      }
+    }
+    padding: 0 0.5rem;
+    .search_bar {
+      width: 65%;
+    }
+  }
+  body .cards {
+    width: 220px;
+    height: 320px;
+  }
+  body .explore_movies > .movies_lower_container,
+  body .explore_movies .tvshows_lower_container,
+  body .explore_tvshows > .movies_lower_container,
+  body .explore_tvshows .tvshows_lower_container {
+    gap: 5rem;
+  }
+  body .explore_movies > .movies_upper_cotainer > span,
+  body .explore_movies .tvshows_upper_container > span,
+  body .explore_tvshows > .movies_upper_cotainer > span,
+  body .explore_tvshows .tvshows_upper_container > span {
+    font-size: 13px;
+  }
+  body .explore_movies > .movies_upper_cotainer > .sorting > select,
+  body .explore_movies .tvshows_upper_container > .sorting > select,
+  body .explore_tvshows > .movies_upper_cotainer > .sorting > select,
+  body .explore_tvshows .tvshows_upper_container > .sorting > select {
+    padding: 0.2rem;
+  }
+  body .search > .search_container {
+    gap: 5rem;
+  }
+  body
+    .details_page
+    > .upper_details
+    > .upper_details_overlay
+    > .overlay_details
+    > .overlay_details_right
+    > .right_four {
+    display: none;
+  }
+}

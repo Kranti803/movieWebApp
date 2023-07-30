@@ -1,0 +1,121 @@
+.home {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.93);
+  padding: 1rem 2rem;
+  width: 100%;
+  > p > span {
+    color: #cf0;
+  }
+  > .slider_section_container {
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    margin-top: 1rem;
+    > .slider_buttons {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      top: 50%;
+      display: flex;
+      justify-content: space-between;
+      > button {
+        display: none;
+        background-color: rgb(255, 32, 32);
+        border: none;
+        padding: 1.3rem 0.5rem;
+        > svg {
+          color: white;
+        }
+      }
+    }
+
+    > h4 {
+      padding: 10px 0;
+    }
+
+    .slider {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-shrink: 0;
+      gap: 1rem;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    &:hover {
+      > .slider_buttons > button {
+        display: block;
+      }
+    }
+  }
+}
+
+//styling for sliders.............................
+.sliderCard {
+  height: 350px;
+  width: 220px;
+  //important..
+  flex-shrink: 0;
+  //important..
+  cursor: pointer;
+
+  > div:first-of-type {
+    height: 80%;
+    //styling for lazy-load-image-component
+    > span {
+      display: block;
+      height: 100%;
+      width: 100%;
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    //styling for lazy-load-image-component
+  }
+  > .details {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3px;
+    > div:first-of-type {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 80%;
+      > p {
+        font-size: 14px;
+        padding-top: 5px;
+      }
+      > span {
+        border: 1px solid white;
+        width: fit-content;
+        font-size: 9px;
+        padding: 2px;
+      }
+    }
+    > div:last-of-type {
+      width: 20%;
+      color: white;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      > p:first-of-type {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        color: #cf0;
+        > span {
+          color: white;
+        }
+      }
+    }
+  }
+}

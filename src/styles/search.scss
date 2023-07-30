@@ -1,0 +1,24 @@
+.search {
+  padding: 7rem 2rem 4rem 2rem;
+  min-height: 100vh;
+  // background-image: url(../assets/bgImage.png);
+  background-color: rgba(0, 0, 0, 0.930);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  > h4 {
+    color: white;
+    border-bottom: 2px solid #cf0;
+    width: fit-content;
+  }
+  > .search_container {
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+    width: 85vw;
+    align-items: flex-start;
+    margin: auto;
+  }
+}
