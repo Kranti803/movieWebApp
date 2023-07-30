@@ -24,7 +24,7 @@ const Casts = ({ mediaType, id }) => {
                 }
               />
             <div>
-              <h4>{item?.name}</h4>
+              <h4>{item?.name || item?.original_name}</h4>
               <span>{item?.known_for_department}</span>
             </div>
           </div>

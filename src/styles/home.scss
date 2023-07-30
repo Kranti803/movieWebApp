@@ -36,7 +36,6 @@
     .slider {
       margin-bottom: 1rem;
       display: flex;
-      flex-shrink: 0;
       gap: 1rem;
       overflow-x: scroll;
       overflow-y: hidden;
@@ -61,6 +60,7 @@
   flex-shrink: 0;
   //important..
   cursor: pointer;
+  border: 2px solid red;
 
   > div:first-of-type {
     height: 80%;

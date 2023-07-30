@@ -13,7 +13,6 @@ const Home = () => {
     getTrending().then((data) => setTrending(data?.results));
   }, []);
 
-
   return (
     <>
       <Hero />
@@ -32,9 +31,6 @@ const Home = () => {
   );
 };
 export default Home;
-
-
-
 
 export const SliderSection = ({ section, title, sliderId }) => {
   const slideLeft = () => {
