@@ -67,7 +67,7 @@ export const getTVshowsGenre = async () => {
 
 
 
-//discovering movies sction with filtering and pagination.....
+//discovering movies section with filtering and pagination.....
 export const getDiscoverMovies = async (genreId = 28, page) => {
     try {
         const { data } = await axios.get(`https://api.themoviedb.org/3/discover/movie?page=${page}&with_genres=${genreId}`, options);
@@ -111,16 +111,6 @@ export const getDetailsResults = async (mediaType, id) => {
     }
 }
 
-//getting trailer of the series and movies .....
-export const getTrailer = async (mediaType, id) => {
-    try {
-        const { data } = await axios.get(`https://api.themoviedb.org/3/${mediaType}/${id}/videos`, options);
-        const filterTrailerKey = data.results.filter((item) => (item?.type === "Trailer"));
-        return filterTrailerKey;
-    } catch (error) {
-        console.log(error);
-    }
-}
 
 //getting top casts  .....
 export const getTopCasts = async (mediaType, id) => {

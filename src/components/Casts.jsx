@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import user from "../assets/user.jpg";
 import { getTopCasts } from "./../utils/requests";
 import LazyLoading from "./LazyLoadImage";

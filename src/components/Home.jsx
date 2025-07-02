@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getTrending, getUpcoming } from "../utils/requests";
 import Hero from "./Hero";
 import SliderCard from "./SliderCard";

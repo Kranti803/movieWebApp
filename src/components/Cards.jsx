@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import notFound from "../assets/csaff-no-poster.jpg";
 import LazyLoading from "./LazyLoadImage";

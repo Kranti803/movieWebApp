@@ -1,10 +1,9 @@
-import React from "react";
 import { BsPlayFill } from "react-icons/bs";
 import CircularProgressBar from "./CircularProgressbar";
 import LazyLoading from "./LazyLoadImage";
 import { Link } from "react-router-dom";
 
-const DetailSection = ({ details, setPopUp, id, mediaType }) => {
+const DetailSection = ({ details, id, mediaType }) => {
   return (
     <div className="upper_details">
       <LazyLoading

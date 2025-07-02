@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Cards from "./Cards";
 import { getRecommendations } from './../utils/requests';
 

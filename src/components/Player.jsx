@@ -7,7 +7,6 @@ const Player = () => {
   const [season, setSeason] = useState(1);
   const [episode, setEpisode] = useState(1);
   const { mediaType, id } = useParams();
-  console.log(details);
 
   useEffect(() => {
     if (mediaType === "tv") {
@@ -20,7 +19,6 @@ const Player = () => {
         <>
           <iframe
             // src={`https://player.autoembed.cc/embed/${mediaType}/${id}/${season}/${episode}?server=8`}
-
             src={`https://moviesapi.club/${mediaType}/${id}-${season}-${episode}?server=8`}
             title="myTitle"
             allowFullScreen
@@ -67,8 +65,6 @@ const Player = () => {
       ) : (
         <iframe
           // src={`https://player.autoembed.cc/embed/${mediaType}/${id}?server=8`}
-          // src={`https://moviesapi.club/${mediaType}/${id}`}
-          // src={`https://vidlink.pro/${mediaType}/${id}`}
           src={`https://moviesapi.club/${mediaType}/${id}`}
           title="myTitle"
           allowFullScreen

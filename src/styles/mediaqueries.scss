@@ -135,6 +135,24 @@
       font-size: 1.5rem;
     }
   }
+
+  .player {
+    > div {
+      > div {
+        > aside:first-of-type {
+          > p:first-of-type {
+            width: 100%;
+            font-size: 12px;
+            > span {
+              font-size: 10px;
+              display: flex;
+              gap: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 498px) {
@@ -169,6 +187,24 @@
     > a {
       height: unset;
       width: 13.5rem;
+    }
+  }
+
+   .player {
+    > div {
+      > div {
+        > aside:first-of-type {
+          > p:first-of-type {
+            width: 50%;
+            font-size: 10px;
+            > span {
+              font-size: 8px;
+              display: flex;
+              gap: 8px;
+            }
+          }
+        }
+      }
     }
   }
   @media screen and (max-width: 426px) {

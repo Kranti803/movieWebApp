@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Cards from "./Cards";
 import { getTVshows, getTVshowsGenre } from "./../utils/requests";
 import Spinners from "./Spinners";

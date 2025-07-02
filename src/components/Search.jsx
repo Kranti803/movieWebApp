@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getSearchResults } from "../utils/requests";
 import { useParams } from "react-router-dom";
 import Cards from "./Cards";
