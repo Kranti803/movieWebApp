@@ -8,11 +8,11 @@ const Hero = () => {
   const [movies, setMovie] = useState([]);
 
   useEffect(() => {
-    getAllData().then((data) => setMovie(data.results));
+    getAllData().then((data) => setMovie(data?.results));
   }, []);
   
   //getting random movie posters..
-  const movie = movies[Math.floor(Math.random() * movies.length)];
+  const movie = movies[Math.floor(Math.random() * movies?.length)];
 
   return (
     <section className="hero">

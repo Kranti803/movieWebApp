@@ -10,6 +10,7 @@ import Search from './components/Search';
 import Details from './components/Details';
 import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "./components/NotFound";
+import Player from "./components/Player";
 function App() {
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/tvshows" element={<TVshows />} />
           <Route path="/search/:query" element={<Search />} />
           <Route path="/details/:mediaType/:id" element={<Details />} />
+          <Route path="/details/:mediaType/:id/play" element={<Player />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </ScrollToTop>

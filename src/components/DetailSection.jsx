@@ -2,8 +2,9 @@ import React from "react";
 import { BsPlayFill } from "react-icons/bs";
 import CircularProgressBar from "./CircularProgressbar";
 import LazyLoading from "./LazyLoadImage";
+import { Link } from "react-router-dom";
 
-const DetailSection = ({ details, setPopUp }) => {
+const DetailSection = ({ details, setPopUp, id, mediaType }) => {
   return (
     <div className="upper_details">
       <LazyLoading
@@ -28,10 +29,12 @@ const DetailSection = ({ details, setPopUp }) => {
             <div className="right_two">
               <CircularProgressBar vote={details?.vote_average} />
               <span>User Score</span>
-              <button onClick={() => setPopUp(true)}>
-                <BsPlayFill size={25} />
-                Play Trailer
-              </button>
+              <Link to={`/details/${mediaType}/${id}/play `}>
+                <button>
+                  <BsPlayFill size={25} />
+                  Play
+                </button>
+              </Link>
             </div>
             <div className="right_three">
               <h2>Overview</h2>

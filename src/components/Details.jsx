@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getDetailsResults, getTrailer } from "./../utils/requests";
 import Modal from "./Modal";
@@ -27,7 +27,7 @@ const Details = () => {
 
   return (
     <section className="details_page">
-      <DetailSection details={details} setPopUp={setPopUp} />
+      <DetailSection details={details} setPopUp={setPopUp} id={id} mediaType={mediaType} />
       {popUp && <Modal Key={trailerKey[0]?.key} setPopUp={setPopUp} />}
       <Casts mediaType={mediaType} id={id} />
       <Similar mediaType={mediaType} id={id} />

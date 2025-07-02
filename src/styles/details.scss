@@ -76,7 +76,7 @@
             > span {
               font-weight: 500;
             }
-            > button {
+            > a > button {
               margin-left: 2rem;
               font-weight: bold;
               letter-spacing: 1px;
@@ -87,9 +87,11 @@
               display: flex;
               align-items: center;
               font-size: 1rem;
+              padding: 4px 10px;
               transition: all 0.4s ease-in-out;
+              background-color: rgb(109, 182, 0);
               &:hover {
-                color: #cf0;
+                scale: 1.1;
               }
             }
           }
