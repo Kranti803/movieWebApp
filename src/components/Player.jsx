@@ -18,8 +18,7 @@ const Player = () => {
       {mediaType === "tv" ? (
         <>
           <iframe
-            // src={`https://player.autoembed.cc/embed/${mediaType}/${id}/${season}/${episode}?server=8`}
-            // src={`https://moviesapi.club/${mediaType}/${id}-${season}-${episode}?server=8`}
+            src={`https://player.autoembed.cc/embed/${mediaType}/${id}/${season}/${episode}`}
             title="myTitle"
             allowFullScreen
           ></iframe>
@@ -64,8 +63,7 @@ const Player = () => {
         </>
       ) : (
         <iframe
-          // src={`https://player.autoembed.cc/embed/${mediaType}/${id}?server=8`}
-          src={`https://moviesapi.club/${mediaType}/${id}`}
+          src={`https://player.autoembed.cc/embed/${mediaType}/${id}`}
           title="myTitle"
           allowFullScreen
         ></iframe>
